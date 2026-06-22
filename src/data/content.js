@@ -62,11 +62,8 @@ export const EVENT_SERVICES = [
 
 export const WHY_JRP = [
   { title: 'Trusted Global Partners', body: 'A vetted worldwide network of operators, hotels, and ground teams.' },
-  { title: 'Personalized Service', body: 'One dedicated coordinator who knows your preferences end to end.' },
+  { title: 'Personalised Service', body: 'One dedicated coordinator who knows your preferences end to end.' },
   { title: 'End-To-End Coordination', body: 'Every component of your itinerary and logistics managed seamlessly through a single window.' },
-  { title: 'Corporate Travel Expertise', body: 'Policy-aligned programmes with transparent reporting.' },
-  { title: 'VIP Travel Solutions', body: 'Discreet, high-touch service for principals and delegations.' },
-  { title: 'Event Management Expertise', body: 'From intimate gatherings to large-scale conferences.' },
   { title: 'Fast Visa Support', body: 'Documented, deadline-safe approvals handled by specialists.' },
   { title: 'Luxury Concierge Assistance', body: 'The detail-by-detail care of a true private concierge.' },
 ]

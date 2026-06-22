@@ -7,17 +7,12 @@ const PANELS = [
   {
     title: 'Private Aviation & VIP Charters',
     body: 'Charter flights on your schedule, with seamless tarmac-to-destination discretion for principals and delegations.',
-    items: ['VIP Charter Flights', 'Airport Meet & Assist', 'Premium Ground Transportation'],
+    items: ['VIP Charter Flights', 'Airport Meet & Assist', 'Premium Ground Transportation', 'Luxury Wedding Cars'],
   },
   {
-    title: 'Executive Ground & Protection',
-    body: 'Vetted chauffeurs, luxury vehicles, and trained security personnel for confident movement at every stage.',
-    items: ['Luxury Wedding Cars', 'Executive Chauffeurs', 'Private Security Personnel', 'Executive Protection'],
-  },
-  {
-    title: 'High-Profile Coordination',
-    body: 'Confidential, end-to-end travel management for celebrities, dignitaries, and government delegations.',
-    items: ['Celebrity Travel Management', 'Political Delegation Logistics', 'VIP Temple Darshan (Tirupati)'],
+    title: 'Executive Protection & High-Profile Coordination',
+    body: 'Vetted chauffeurs, trained security personnel, and confidential logistics for celebrities, dignitaries, and government delegations.',
+    items: ['Executive Chauffeurs', 'Private Security Personnel', 'Executive Protection', 'Celebrity Travel Management', 'Political Delegation Logistics', 'VIP Temple Darshan (Tirupati)'],
   },
 ]
 
@@ -71,7 +66,7 @@ export default function VipServices() {
       id="vip"
       ref={ref}
       className="relative bg-ink text-white"
-      style={{ colorScheme: 'dark', height: '280vh' }}
+      style={{ colorScheme: 'dark', height: '180vh' }}
       aria-label="VIP and Executive Services"
     >
       {/* Sticky stage (native CSS sticky — cheap, smooth, GPU-friendly). */}

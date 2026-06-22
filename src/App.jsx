@@ -10,7 +10,7 @@ import VipServices from './sections/VipServices'
 import Events from './sections/Events'
 import WhyJrp from './sections/WhyJrp'
 import Contact from './sections/Contact'
-import FinalCta from './sections/FinalCta'
+
 import Footer from './sections/Footer'
 
 export default function App() {
@@ -40,7 +40,6 @@ export default function App() {
           <WhyJrp />
           <ScrollDivider />
           <Contact />
-          <FinalCta />
         </main>
         <Footer />
         
