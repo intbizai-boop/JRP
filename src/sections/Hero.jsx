@@ -82,7 +82,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 max-w-lg text-lg leading-relaxed text-navy/80 md:text-xl"
+          className="mt-4 max-w-lg text-sm leading-relaxed text-navy/80 md:text-xl"
         >
           An elite travel management partner catering to corporate itineraries, bespoke leisure escapes, private aviation, and high-profile security logistics across the globe.
         </motion.p>
