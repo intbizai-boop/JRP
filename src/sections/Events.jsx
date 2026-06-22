@@ -6,20 +6,20 @@ const EVENT_ITEMS = [
     description: 'Flawless celebrations in the world’s most beautiful venues, coordinated from guest arrivals to the final reception.',
   },
   {
+    title: 'Luxury Wedding Cars',
+    description: 'Prestige vehicles — sedans, SUVs, and vintage classics — dressed for your big day and chauffeured to perfection.',
+  },
+  {
+    title: 'Luxury Coach & Group Bus',
+    description: 'Stylish, comfortable coach and bus transfers for large wedding parties, corporate groups, and delegations.',
+  },
+  {
+    title: 'Bouncer & Security Services',
+    description: 'Professional security personnel for events, ensuring guest safety and smooth crowd management throughout.',
+  },
+  {
     title: 'Corporate Conferences',
     description: 'Professional event production, technical setup, and attendee logistics for high-impact brand statements.',
-  },
-  {
-    title: 'Private Celebrations',
-    description: 'Milestone events, family anniversaries, and high-profile gatherings designed with complete privacy.',
-  },
-  {
-    title: 'Group Travel Coordination',
-    description: 'Seamless flights, check-ins, and hotel transfers for delegations and large guest lists.',
-  },
-  {
-    title: 'Hospitality Management',
-    description: 'Dedicated guest relationships, VIP lounge access, and onsite concierge assistance throughout every event.',
   },
 ]
 
@@ -28,21 +28,21 @@ const ICONS = [
   <svg key="1" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
     <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
   </svg>,
-  // 2. Podium (Corporate Conferences)
+  // 2. Car (Luxury Wedding Cars)
   <svg key="2" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8 17H6a2 2 0 01-2-2v-4l2.5-5h11l2.5 5v4a2 2 0 01-2 2h-2m-8 0a2 2 0 104 0m4 0a2 2 0 104 0" />
   </svg>,
-  // 3. Sparkles (Private Celebrations)
+  // 3. Bus (Luxury Coach & Group Bus)
   <svg key="3" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h18M6 17h12m-7-5h3m-9 9h16a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v11a2 2 0 002 2z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h1m10-12h3a2 2 0 012 2v8a2 2 0 01-2 2h-1M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M8 6h8m-6 9a1 1 0 102 0 1 1 0 00-2 0m4 0a1 1 0 102 0 1 1 0 00-2 0" />
   </svg>,
-  // 4. Airplane (Group Travel Coordination)
+  // 4. Shield (Bouncer & Security)
   <svg key="4" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
   </svg>,
-  // 5. Service Bell (Hospitality Management)
+  // 5. Podium (Corporate Conferences)
   <svg key="5" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
   </svg>,
 ]
 

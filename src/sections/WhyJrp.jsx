@@ -1,63 +1,114 @@
-import { Section, SectionHeading, RevealGroup, Item } from '../components/Section'
-import { WHY_JRP } from '../data/content'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
 
-const ICONS = [
-  // 1. Globe (Trusted Global Partners)
-  <svg key="1" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-    <path d="M2 12h20" />
-  </svg>,
-  // 2. User (Personalised Service)
-  <svg key="2" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-  </svg>,
-  // 3. Arrows (End-To-End Coordination)
-  <svg key="3" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-  </svg>,
-  // 4. Shield (Fast Visa Support)
-  <svg key="4" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-  </svg>,
-  // 5. Key (Luxury Concierge Assistance)
-  <svg key="5" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m-2-2a2 2 0 00-2 2m2-2V5a2 2 0 10-4 0v2m7 0h3M5 20h14a2 2 0 002-2V10a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-  </svg>
+const PILLARS = [
+  'Trusted global operator network',
+  'Personalised itinerary for every client',
+  'End-to-end logistics, single point of contact',
+  'Fast visa & forex support',
+  'Luxury concierge at every stage',
 ]
 
 export default function WhyJrp() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.25 })
+
+  const container = {
+    hidden: {},
+    show: { transition: { staggerChildren: 0.1 } },
+  }
+  const item = {
+    hidden: { opacity: 0, x: -16 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
+  }
+
   return (
-    <Section id="why" className="bg-white">
-      <SectionHeading
-        eyebrow="Why JRP"
-        title="Why Clients Choose JRP International"
-        lead="The reliability of a global operator with the attentiveness of a private concierge."
-      />
+    <section id="why" className="bg-white py-20 md:py-24" ref={ref}>
+      <div className="container-lux">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
 
-      <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-        {WHY_JRP.map((w, idx) => (
-          <Item
-            key={w.title}
-            className="group relative min-w-0 overflow-hidden rounded-2xl border border-hairline bg-gradient-to-br from-white to-canvas/30 p-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 hover:shadow-float"
-          >
-            {/* Subtle glow background element */}
-            <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-gold/5 blur-xl transition-all duration-500 group-hover:scale-150 group-hover:bg-gold/10" aria-hidden="true" />
-            
-            {/* Icon circle */}
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-royal/[0.04] text-royal transition-colors duration-300 group-hover:bg-gold/[0.08] group-hover:text-gold">
-              {ICONS[idx] || ICONS[0]}
+          {/* Left — associate partner callout */}
+          <div className="relative overflow-hidden rounded-2xl bg-navy p-10 text-white grain">
+            {/* Gradient glow */}
+            <div
+              className="pointer-events-none absolute inset-0 opacity-50"
+              style={{
+                background:
+                  'radial-gradient(60% 80% at 0% 0%, rgba(42,125,225,0.4) 0%, transparent 60%), radial-gradient(50% 70% at 100% 100%, rgba(212,175,55,0.28) 0%, transparent 55%)',
+              }}
+              aria-hidden="true"
+            />
+
+            <div className="relative">
+              <p className="eyebrow text-gold">Associate Partner</p>
+              <span className="mt-4 block h-px w-10 bg-gold/60" aria-hidden="true" />
+
+              {/* Big number */}
+              <div className="mt-8 flex items-end gap-3">
+                <span className="font-display text-[5rem] font-semibold leading-none tracking-tightest text-gold">
+                  15<span className="text-[3rem]">+</span>
+                </span>
+                <span className="mb-3 font-mono text-sm uppercase tracking-widemono text-white/60 leading-snug">
+                  Years of<br />expertise
+                </span>
+              </div>
+
+              <p className="mt-6 text-base leading-relaxed text-white/75 max-w-sm">
+                JRP International is proudly backed by{' '}
+                <strong className="font-semibold text-white">Blue Spice Holidays</strong> — a seasoned travel associate
+                whose team brings over 15 years of hands-on experience across luxury tourism, corporate travel, and
+                high-profile event logistics.
+              </p>
+
+              {/* BSH badge */}
+              <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/20 text-gold">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </span>
+                <span className="font-mono text-xs uppercase tracking-widemono text-white/70">
+                  Blue Spice Holidays
+                </span>
+              </div>
             </div>
+          </div>
 
-            <h3 className="mt-6 font-display text-lg font-semibold tracking-tight text-ink">
-              {w.title}
-            </h3>
-            <p className="mt-3 text-[14px] leading-relaxed text-body">
-              {w.body}
-            </p>
-          </Item>
-        ))}
-      </RevealGroup>
-    </Section>
+          {/* Right — pillars checklist */}
+          <div>
+            <p className="eyebrow mb-4 text-royal">Why Choose JRP</p>
+            <span className="block h-px w-10 bg-gradient-to-r from-navy to-gold mb-6" aria-hidden="true" />
+            <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink md:text-4xl [text-wrap:balance]">
+              The reliability of a global operator, the care of a private concierge.
+            </h2>
+
+            <motion.ul
+              variants={container}
+              initial="hidden"
+              animate={isInView ? 'show' : 'hidden'}
+              className="mt-9 space-y-4"
+            >
+              {PILLARS.map((p) => (
+                <motion.li
+                  key={p}
+                  variants={item}
+                  className="group flex items-start gap-4 rounded-xl border border-hairline bg-canvas px-5 py-4 transition-all duration-300 hover:border-gold/30 hover:shadow-soft"
+                >
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold transition-colors duration-300 group-hover:bg-gold/25">
+                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="2 6 5 9 10 3" />
+                    </svg>
+                  </span>
+                  <span className="text-[14.5px] leading-relaxed text-body group-hover:text-ink transition-colors duration-300">
+                    {p}
+                  </span>
+                </motion.li>
+              ))}
+            </motion.ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
   )
 }

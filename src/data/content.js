@@ -12,7 +12,7 @@ export const SERVICES = [
   { title: 'Holiday Packages', outcome: 'Curated luxury escapes designed around how you want to feel, not just where you go.', image: '/images/services/holidays.webp' },
   { title: 'Corporate Travel', outcome: 'Predictable, policy-aligned travel that keeps your teams moving and your costs clear.', image: '/images/services/corporate.webp' },
   { title: 'Visa Assistance', outcome: 'Fast, documented, expert-handled approvals so deadlines are never at risk.', image: '/images/services/visa.webp' },
-  { title: 'Airport Lounge Access', outcome: 'Calm, private space before every departure, worldwide.', image: '/images/services/lounge.webp' },
+  { title: 'Forex Assistance', outcome: 'Competitive exchange rates, travel cards, and currency needs sorted before you depart.', image: '/images/services/lounge.webp' },
   { title: 'Cruise Experiences', outcome: 'Premium cabins and shore programmes arranged with care.', image: '/images/services/cruise.webp' },
 ]
 
@@ -38,14 +38,15 @@ export const DESTINATIONS = {
 export const VIP_SERVICES = [
   'VIP Charter Flights',
   'Luxury Wedding Cars',
+  'Luxury Coach / Group Bus',
   'Executive Chauffeurs',
-  'Private Security Personnel',
+  'Private Security & Bouncers',
   'Executive Protection',
   'Celebrity Travel Management',
   'Political Delegation Logistics',
   'VIP Temple Darshan (Tirupati)',
   'Airport Meet & Assist',
-  'Premium Ground Transportation',
+  'Forex Assistance',
 ]
 
 export const EVENT_SERVICES = [
@@ -57,7 +58,9 @@ export const EVENT_SERVICES = [
   'Group Travel Coordination',
   'Event Logistics',
   'Hospitality Management',
-  'Luxury Transportation',
+  'Luxury Wedding Cars',
+  'Luxury Coach / Group Bus',
+  'Bouncer & Security Services',
 ]
 
 export const WHY_JRP = [
@@ -86,7 +89,7 @@ export const SERVICE_OPTIONS = [
 ]
 
 export const STATS = [
-  { value: '20+', label: 'Years of expertise' },
+  { value: '15+', label: 'Years of expertise' },
   { value: '50+', label: 'Destinations worldwide' },
   { value: '24/7', label: 'Dedicated concierge' },
   { value: '100%', label: 'Tailored itineraries' },
@@ -100,9 +103,10 @@ export const MARQUEE_ITEMS = [
   'Conferences',
   'Executive Protection',
   'Luxury Wedding Cars',
+  'Luxury Coach & Group Bus',
   'Airport Meet & Assist',
   'Visa Assistance',
-  'Cruise Experiences',
-  'Event Management',
-  'Celebrity Coordination',
+  'Forex Assistance',
+  'Bouncer & Security Services',
+  'Celebrity Travel',
 ]
