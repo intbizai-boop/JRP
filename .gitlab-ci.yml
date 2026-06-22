@@ -1,0 +1,33 @@
+# CI pipeline for JRP International (React + Vite).
+# Verifies dependencies install and the production build compiles on every push / MR.
+
+default:
+  image: node:20-alpine
+
+stages:
+  - build
+
+# Cache npm + node_modules across pipelines to keep jobs fast.
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+    - node_modules/
+
+build:
+  stage: build
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - npm run build
+  artifacts:
+    name: "jrp-build-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - dist/
+    expire_in: 1 week
+  rules:
+    # Run on merge requests and on pushes to branches/tags.
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
