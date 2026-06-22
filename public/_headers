@@ -1,0 +1,46 @@
+# Cloudflare Pages cache headers
+
+# HTML & PWA manifest — never cache; always revalidate so updates land immediately
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/manifest.webmanifest
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Service worker — must never be cached
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/registerSW.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/workbox-*.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Hashed JS & CSS assets — 1 year immutable (Vite adds hash to filename)
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images — 30 days, stale-while-revalidate
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/Logo.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# PWA Static Icons — 7 days, stale-while-revalidate
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/pwa-192x192.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/pwa-512x512.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# Videos — serve fresh every time (too large to cache sensibly)
+/videos/*
+  Cache-Control: no-cache
