@@ -11,3 +11,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Platform configs not used in this deployment
+vercel.json
+.gitlab-ci.yml
+
+# Internal dev / AI tooling files
+*.skill.md
+
+# Loose video files (actual videos live in public/videos/)
+desktop_hero_video.mp4
+mobile_hero_video.mp4
+convert_logo.cjs
+convert_dubai.js
