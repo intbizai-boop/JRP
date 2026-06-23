@@ -13,7 +13,7 @@ export const SERVICES = [
   { title: 'Holiday Packages', outcome: 'Curated luxury escapes designed around how you want to feel, not just where you go.', image: '/images/services/holidays.webp' },
   { title: 'Corporate Travel', outcome: 'Predictable, policy-aligned travel that keeps your teams moving and your costs clear.', image: '/images/services/corporate.webp' },
   { title: 'Visa Assistance', outcome: 'Fast, documented, expert-handled approvals so deadlines are never at risk.', image: '/images/services/visa.webp' },
-  { title: 'Forex Assistance', outcome: 'Competitive exchange rates, travel cards, and currency needs sorted before you depart.', image: '/images/services/lounge.webp' },
+  { title: 'Forex Assistance', outcome: 'Competitive exchange rates, travel cards, and currency needs sorted before you depart.', image: '/images/forex assistance.jpeg' },
   { title: 'Cruise Experiences', outcome: 'Premium cabins and shore programmes arranged with care.', image: '/images/services/cruise.webp' },
 ]
 
@@ -22,17 +22,17 @@ export const DESTINATIONS = {
     { name: 'Kerala', tagline: 'Backwaters, stillness, and unhurried luxury.', image: '/images/destinations/kerala.webp' },
     { name: 'Andaman', tagline: 'Private shores and turquoise solitude.', image: '/images/destinations/andaman.webp' },
     { name: 'Kashmir', tagline: 'Alpine grandeur with five-star comfort.', image: '/images/destinations/kashmir.webp' },
-    { name: 'Manali', tagline: 'Mountain air, mapped to your pace.', image: '/images/destinations/manali.webp' },
-    { name: 'Gangtok', tagline: 'Himalayan calm, elevated.', image: '/images/destinations/gangtok.webp' },
+    { name: 'Manali', tagline: 'Mountain air, mapped to your pace.', image: '/images/manali.jpeg' },
+    { name: 'Gangtok', tagline: 'Himalayan calm, elevated.', image: '/images/gangtok.jpeg' },
   ],
   international: [
     { name: 'Dubai', tagline: 'Where ambition meets indulgence.', image: '/images/destinations/dubai.webp' },
-    { name: 'Bali', tagline: 'Sanctuary, ceremony, and sea.', image: '/images/destinations/bali.webp' },
+    { name: 'Bali', tagline: 'Sanctuary, ceremony, and sea.', image: '/images/bali.jpeg' },
     { name: 'Thailand', tagline: 'Coastlines curated for you.', image: '/images/destinations/thailand.webp' },
-    { name: 'Singapore', tagline: 'Precision, polish, and pace.', image: '/images/destinations/singapore.webp' },
-    { name: 'Vietnam', tagline: 'Heritage and horizon in one journey.', image: '/images/destinations/vietnam.webp' },
-    { name: 'Malaysia', tagline: 'Rainforest to skyline, effortlessly.', image: '/images/destinations/malaysia.webp' },
-    { name: 'Sri Lanka', tagline: 'Island serenity, expertly held.', image: '/images/destinations/srilanka.webp' },
+    { name: 'Singapore', tagline: 'Precision, polish, and pace.', image: '/images/singapore.jpeg' },
+    { name: 'Vietnam', tagline: 'Heritage and horizon in one journey.', image: '/images/vietnam.jpeg' },
+    { name: 'Malaysia', tagline: 'Rainforest to skyline, effortlessly.', image: '/images/malaysia.jpeg' },
+    { name: 'Sri Lanka', tagline: 'Island serenity, expertly held.', image: '/images/srilanka.jpeg' },
   ],
 }
 

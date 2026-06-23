@@ -20,7 +20,7 @@ const EVENT_ITEMS = [
   {
     title: 'Bouncer & Security Services',
     description: 'Professional security personnel for events, ensuring guest safety and smooth crowd management throughout.',
-    image: '/images/bouncer-security.png',
+    image: '/images/bouncer.jpeg',
   },
   {
     title: 'Conferences, Meetings & Training',
