@@ -7,19 +7,19 @@ const PANELS = [
     title: 'Private Aviation & VIP Charters',
     body: 'Charter flights on your schedule, with seamless tarmac-to-destination discretion for principals and delegations.',
     items: ['VIP Charter Flights', 'Airport Meet & Assist', 'Forex Assistance'],
-    image: '/images/Charter-flights-booking.jpeg',
+    image: '/images/Charter-flights-booking.webp',
   },
   {
     title: 'Ground, Wedding & Events',
     body: 'Luxury vehicles, coaches for groups, and trained security - so every arrival, wedding, or celebration moves without friction.',
     items: ['Luxury Wedding Cars', 'Luxury Coach / Group Bus', 'Executive Chauffeurs', 'Bouncer & Security Services'],
-    image: '/images/luxury-coach.jpeg',
+    image: '/images/luxury-coach.webp',
   },
   {
     title: 'Celebrity & High-Profile Travel',
     body: 'Confidential, end-to-end travel management for celebrities, dignitaries, and government delegations.',
     items: ['Celebrity Travel Management', 'Executive Protection', 'Political Delegation Logistics', 'VIP Temple Darshan'],
-    image: '/images/celebrity-travel.png',
+    image: '/images/celebrity-travel.webp',
   },
 ]
 

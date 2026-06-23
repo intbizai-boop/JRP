@@ -84,7 +84,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-navy shadow-float group">
               <div className="img-fallback absolute inset-0" aria-hidden="true" />
               <img
-                src="/images/idol.jpeg"
+                src="/images/idol.webp"
                 alt="Tirupati Balaji Divine Idol"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-lux group-hover:scale-105"
                 loading="lazy"
@@ -115,7 +115,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             <div className="absolute -bottom-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl bg-navy">
                 <img
-                  src="/images/tirupati-gopurams.png"
+                  src="/images/tirupati-gopurams.webp"
                   alt="Ananda Nilayam Golden Gopurams"
                   className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"

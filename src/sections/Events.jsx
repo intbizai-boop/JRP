@@ -5,27 +5,27 @@ const EVENT_ITEMS = [
   {
     title: 'Destination Weddings',
     description: 'Flawless celebrations in the world’s most beautiful venues, coordinated from guest arrivals to the final reception.',
-    image: '/images/destination-weddings.jpeg',
+    image: '/images/destination-weddings.webp',
   },
   {
     title: 'Luxury Wedding Cars',
     description: 'Prestige vehicles (sedans, SUVs, and vintage classics) dressed for your big day and chauffeured to perfection.',
-    image: '/images/luxury -car.jpeg',
+    image: '/images/luxury -car.webp',
   },
   {
     title: 'Luxury Coach & Group Bus',
     description: 'Stylish, comfortable coach and bus transfers for large wedding parties, corporate groups, and delegations.',
-    image: '/images/luxury-coach.jpeg',
+    image: '/images/luxury-coach.webp',
   },
   {
     title: 'Bouncer & Security Services',
     description: 'Professional security personnel for events, ensuring guest safety and smooth crowd management throughout.',
-    image: '/images/bouncer.jpeg',
+    image: '/images/bouncer.webp',
   },
   {
     title: 'Conferences, Meetings & Training',
     description: 'Professional event production, technical setup, and end-to-end logistics for high-impact conferences, corporate meetings, and training seminars.',
-    image: '/images/Conferences,meeting.training.jpeg',
+    image: '/images/Conferences,meeting.training.webp',
   },
 ]
 
