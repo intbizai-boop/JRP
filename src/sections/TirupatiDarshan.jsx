@@ -91,12 +91,23 @@ export default function TirupatiDarshan({ onSelectDestination }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" aria-hidden="true" />
               
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute bottom-6 left-6 right-6 z-10">
                 <span className="font-mono text-xs uppercase tracking-widemono text-gold">Divine Presence</span>
                 <h4 className="mt-2 font-display text-2xl font-semibold text-white tracking-tight">
                   Lord Tirupati Balaji
                 </h4>
                 <p className="mt-1 text-sm text-white/70">Sacred Darshan of the Holy Deity</p>
+                
+                {/* Enquire Now CTA (always visible) */}
+                <button
+                  onClick={handleBookClick}
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-gold tracking-wide hover:text-white transition-colors duration-200"
+                >
+                  Enquire Now
+                  <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
               </div>
             </div>
 
