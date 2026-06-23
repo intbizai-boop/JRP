@@ -44,8 +44,8 @@ export default function Events() {
           return (
             <Item
               key={item.title}
-              className={`group relative flex min-w-0 items-end overflow-hidden rounded-2xl bg-navy p-7 text-white shadow-soft transition-[transform,box-shadow] duration-500 ease-lux hover:-translate-y-1 hover:shadow-float min-h-[280px] ${
-                isFeatured ? 'sm:col-span-2' : ''
+              className={`group relative flex min-w-0 items-end overflow-hidden rounded-2xl bg-navy p-7 text-white shadow-soft transition-[transform,box-shadow] duration-500 ease-lux hover:-translate-y-1 hover:shadow-float min-h-[220px] ${
+                isFeatured ? 'sm:col-span-2 min-h-[260px]' : ''
               }`}
             >
               {/* Fallback sits below the image */}

@@ -5,8 +5,8 @@ import ParallaxImage from '../components/ParallaxImage'
 function DestinationCard({ name, tagline, image, span = false }) {
   return (
     <Item
-      className={`group relative flex min-w-0 items-end overflow-hidden rounded-2xl bg-navy p-7 text-white shadow-soft transition-[transform,box-shadow] duration-500 ease-lux hover:-translate-y-1 hover:shadow-float grain min-h-[260px] ${
-        span ? 'sm:col-span-2 min-h-[300px]' : ''
+      className={`group relative flex min-w-0 items-end overflow-hidden rounded-2xl bg-navy p-7 text-white shadow-soft transition-[transform,box-shadow] duration-500 ease-lux hover:-translate-y-1 hover:shadow-float grain min-h-[200px] ${
+        span ? 'sm:col-span-2 min-h-[240px]' : ''
       }`}
     >
       {/* Fallback sits below the image */}
