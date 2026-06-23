@@ -91,12 +91,12 @@ export default function TirupatiDarshan({ onSelectDestination }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" aria-hidden="true" />
               
-              <div className="absolute bottom-6 left-6 right-6 z-10">
+              <div className="absolute bottom-6 left-6 right-6 lg:max-w-[50%] z-10">
                 <span className="font-mono text-xs uppercase tracking-widemono text-gold">Divine Presence</span>
-                <h4 className="mt-2 font-display text-2xl font-semibold text-white tracking-tight">
+                <h4 className="mt-2 font-display text-2xl lg:text-xl font-semibold text-white tracking-tight">
                   Lord Tirupati Balaji
                 </h4>
-                <p className="mt-1 text-sm text-white/70">Sacred Darshan of the Holy Deity</p>
+                <p className="mt-1 text-sm lg:text-xs text-white/70">Sacred Darshan of the Holy Deity</p>
                 
                 {/* Enquire Now CTA (always visible) */}
                 <button
@@ -112,7 +112,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             </div>
 
             {/* Overlapping floating card */}
-            <div className="absolute -top-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
+            <div className="absolute -bottom-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl bg-navy">
                 <img
                   src="/images/tirupati-gopurams.webp"
