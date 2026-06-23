@@ -38,7 +38,7 @@ function Panel({ panel, index, total, progress }) {
   return (
     <motion.div
       style={{ opacity, y }}
-      className="absolute inset-0 grid grid-cols-1 md:grid-cols-12 gap-8 items-center h-full w-full motion-reduce:!opacity-100 motion-reduce:!transform-none"
+      className="absolute inset-0 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center h-full w-full motion-reduce:!opacity-100 motion-reduce:!transform-none"
     >
       {/* Left Column: Text & Items */}
       <div className="md:col-span-7 flex flex-col justify-center">
@@ -48,12 +48,12 @@ function Panel({ panel, index, total, progress }) {
         <h3 className="mt-4 font-display text-3xl font-semibold tracking-tight md:text-4xl leading-tight">
           {panel.title}
         </h3>
-        <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70">{panel.body}</p>
-        <ul className="mt-8 flex flex-wrap gap-2.5">
+        <p className="mt-4 md:mt-5 max-w-lg text-[14.5px] md:text-base leading-relaxed text-white/70">{panel.body}</p>
+        <ul className="mt-4 md:mt-8 flex flex-wrap gap-2">
           {panel.items.map((item) => (
             <li
               key={item}
-              className="rounded-full border border-white/15 bg-white/[0.04] px-4 py-1.5 text-xs text-white/85"
+              className="rounded-full border border-white/15 bg-white/[0.04] px-4 py-1.5 text-[11px] md:text-xs text-white/85"
             >
               {item}
             </li>
@@ -61,8 +61,8 @@ function Panel({ panel, index, total, progress }) {
         </ul>
       </div>
 
-      {/* Right Column: Premium Image Card */}
-      <div className="md:col-span-5 relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-float">
+      {/* Right Column: Premium Image Card (smaller & tighter aspect ratio on mobile) */}
+      <div className="md:col-span-5 relative aspect-[16/10] md:aspect-[4/3] w-2/3 max-w-[240px] md:w-full md:max-w-none mx-auto overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-float mt-2 md:mt-0">
         <img
           src={panel.image}
           alt={panel.title}
@@ -113,7 +113,7 @@ export default function VipServices() {
           </div>
 
           {/* Cross-fading panel stack. */}
-          <div className="relative min-h-[520px] md:min-h-[420px] lg:min-h-[360px]">
+          <div className="relative min-h-[460px] md:min-h-[420px] lg:min-h-[360px]">
             {PANELS.map((panel, i) => (
               <Panel
                 key={panel.title}
