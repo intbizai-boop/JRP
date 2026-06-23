@@ -16,7 +16,7 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
 export default function App() {
-  const [prefilledDestination, setPrefilledDestination] = useState('')
+  const [selectedEnquiry, setSelectedEnquiry] = useState(null)
 
   return (
     <MotionConfig reducedMotion="user">
@@ -33,19 +33,19 @@ export default function App() {
           <Hero />
           <Stats />
           <ScrollDivider />
-          <Services />
+          <Services onSelectService={(name) => setSelectedEnquiry({ type: 'Service', name })} />
           <ScrollDivider />
           <Destinations />
           <ScrollDivider />
           <VipServices />
           <ScrollDivider />
-          <TirupatiDarshan onSelectDestination={setPrefilledDestination} />
+          <TirupatiDarshan onSelectDestination={(name) => setSelectedEnquiry({ type: 'Destination', name })} />
           <ScrollDivider />
           <Events />
           <ScrollDivider />
           <WhyJrp />
           <ScrollDivider />
-          <Contact prefilledDestination={prefilledDestination} setPrefilledDestination={setPrefilledDestination} />
+          <Contact selectedEnquiry={selectedEnquiry} setSelectedEnquiry={setSelectedEnquiry} />
         </main>
         <Footer />
         
