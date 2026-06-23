@@ -37,7 +37,6 @@ export default function Hero() {
           {/* Desktop Video */}
           <video
             src="/videos/desktop.mp4"
-            poster="/images/hero.webp"
             autoPlay
             loop
             muted
@@ -49,7 +48,6 @@ export default function Hero() {
           {/* Mobile Video */}
           <video
             src="/videos/mobile.mp4"
-            poster="/images/hero.webp"
             autoPlay
             loop
             muted
