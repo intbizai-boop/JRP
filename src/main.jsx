@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // Register local custom service worker in production
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=1.1.1')
+    navigator.serviceWorker.register('/sw.js?v=1.1.0')
       .then((reg) => {
         console.log('[Service Worker] Scope:', reg.scope);
       })
