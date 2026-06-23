@@ -154,7 +154,7 @@ export default function Contact({ prefilledDestination, setPrefilledDestination 
         </div>
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
-          {/* Left — contact meta */}
+          {/* Left - contact meta */}
           <div className="lg:col-span-1 flex flex-col gap-8">
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm">
               <dl className="space-y-7">
@@ -205,7 +205,7 @@ export default function Contact({ prefilledDestination, setPrefilledDestination 
             </div>
           </div>
 
-          {/* Right — the form */}
+          {/* Right - the form */}
           <div className="lg:col-span-2">
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-8 shadow-soft backdrop-blur-sm md:p-10">
               <h3 className="font-display text-2xl font-semibold text-white mb-8">Your Travel Details</h3>

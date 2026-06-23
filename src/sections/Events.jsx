@@ -7,7 +7,7 @@ const EVENT_ITEMS = [
   },
   {
     title: 'Luxury Wedding Cars',
-    description: 'Prestige vehicles — sedans, SUVs, and vintage classics — dressed for your big day and chauffeured to perfection.',
+    description: 'Prestige vehicles (sedans, SUVs, and vintage classics) dressed for your big day and chauffeured to perfection.',
   },
   {
     title: 'Luxury Coach & Group Bus',
@@ -50,7 +50,7 @@ export default function Events() {
   return (
     <Section id="events" className="bg-tint">
       <SectionHeading
-        eyebrow="04 — Weddings & Events"
+        eyebrow="05 - Weddings & Events"
         title="Every Occasion Elevated"
         lead="From destination weddings to executive conferences, we manage the logistics, hospitality, and transportation so every moment lands."
       />

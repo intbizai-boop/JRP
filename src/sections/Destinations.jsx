@@ -13,7 +13,7 @@ function DestinationCard({ name, tagline, image, span = false }) {
       <div className="img-fallback absolute inset-0" aria-hidden="true" />
 
       {/* Reusable ParallaxImage component */}
-      <ParallaxImage src={image} alt={`${name} — luxury travel destination`} />
+      <ParallaxImage src={image} alt={`${name} - luxury travel destination`} />
 
       {/* Gradient overlay sits on top of image */}
       <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink/85 via-navy/30 to-transparent" aria-hidden="true" />
@@ -32,7 +32,7 @@ export default function Destinations() {
   return (
     <Section id="destinations" className="bg-base">
       <SectionHeading
-        eyebrow="02 — Popular Destinations"
+        eyebrow="02 - Popular Destinations"
         title="Places worth the journey, planned to the detail"
         lead="Hand-picked domestic escapes and international experiences, each designed around how you want to travel."
       />

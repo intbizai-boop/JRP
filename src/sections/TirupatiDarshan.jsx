@@ -84,7 +84,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-navy shadow-float group">
               <div className="img-fallback absolute inset-0" aria-hidden="true" />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/A_View_of_Tirumala_Venkateswara_Temple.JPG"
+                src="/images/tirupati-temple.png"
                 alt="Tirumala Venkateswara Temple Architecture"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-lux group-hover:scale-105"
                 loading="lazy"
@@ -104,7 +104,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             <div className="absolute -bottom-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl bg-navy">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/8/83/Tirumala_gopurams.JPG"
+                  src="/images/tirupati-gopurams.png"
                   alt="Ananda Nilayam Golden Gopurams"
                   className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
@@ -120,7 +120,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
 
           {/* Right Column: Text & Features List */}
           <div className="lg:col-span-7">
-            <p className="eyebrow mb-4 text-gold">04 — Exclusive Pilgrimage</p>
+            <p className="eyebrow mb-4 text-gold">04 - Exclusive Pilgrimage</p>
             <span className="block h-px w-12 bg-gradient-to-r from-navy to-gold mb-6" aria-hidden="true" />
             
             <h2 className="font-display text-3xl font-semibold tracking-tightest text-ink md:text-5xl md:leading-[1.1] [text-wrap:balance]">
@@ -128,7 +128,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             </h2>
             
             <p className="mt-5 text-lg leading-relaxed text-body [text-wrap:pretty]">
-              Embark on a sacred journey to the abode of Lord Venkateswara with absolute peace of mind. We choreograph every step of your pilgrimage—handling registration assistance, luxury transport, and five-star accommodations—so you can focus entirely on the spiritual experience.
+              Embark on a sacred journey to the abode of Lord Venkateswara with absolute peace of mind. We choreograph every step of your pilgrimage by handling registration assistance, luxury transport, and five-star accommodations, so you can focus entirely on the spiritual experience.
             </p>
 
             <ul className="mt-9 space-y-5">

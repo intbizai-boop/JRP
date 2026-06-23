@@ -3,7 +3,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { useCanHover, useReducedMotion } from '../hooks/useMediaQuery'
 
 // Magnetic hover wrapper. Desktop + fine-pointer only; no-op on touch / reduced-motion.
-// Uses motion values + spring (compositor transforms) — never triggers React re-renders.
+// Uses motion values + spring (compositor transforms) - never triggers React re-renders.
 export function Magnetic({ children, strength = 0.3, className = '' }) {
   const ref = useRef(null)
   const canHover = useCanHover()

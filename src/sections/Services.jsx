@@ -41,7 +41,7 @@ export default function Services() {
   return (
     <Section id="services" className="bg-tint">
       <SectionHeading
-        eyebrow="01 — Premium Services"
+        eyebrow="01 - Premium Services"
         title="Everything your journey requires, under one roof"
         lead="From first enquiry to final arrival, JRP coordinates every detail so you experience only the result."
       />

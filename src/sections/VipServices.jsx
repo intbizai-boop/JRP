@@ -11,7 +11,7 @@ const PANELS = [
   },
   {
     title: 'Ground, Wedding & Events',
-    body: 'Luxury vehicles, coaches for groups, and trained security — so every arrival, wedding, or celebration moves without friction.',
+    body: 'Luxury vehicles, coaches for groups, and trained security - so every arrival, wedding, or celebration moves without friction.',
     items: ['Luxury Wedding Cars', 'Luxury Coach / Group Bus', 'Executive Chauffeurs', 'Bouncer & Security Services'],
   },
   {
@@ -74,7 +74,7 @@ export default function VipServices() {
       style={{ colorScheme: 'dark', height: '280vh' }}
       aria-label="VIP and Executive Services"
     >
-      {/* Sticky stage (native CSS sticky — cheap, smooth, GPU-friendly). */}
+      {/* Sticky stage (native CSS sticky - cheap, smooth, GPU-friendly). */}
       <div className="sticky top-0 flex min-h-[100svh] items-center overflow-hidden grain">
         <div
           className="pointer-events-none absolute inset-0 opacity-60"
@@ -86,7 +86,7 @@ export default function VipServices() {
         />
         <div className="container-lux relative grid w-full items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="eyebrow mb-4 text-gold">03 — VIP & Executive Services</p>
+            <p className="eyebrow mb-4 text-gold">03 - VIP & Executive Services</p>
             <h2 className="max-w-md font-display text-4xl font-semibold tracking-tightest md:text-6xl md:leading-[1.05]">
               Travel Beyond Expectations.
             </h2>

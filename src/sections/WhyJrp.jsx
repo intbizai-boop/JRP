@@ -27,7 +27,7 @@ export default function WhyJrp() {
       <div className="container-lux">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
 
-          {/* Left — associate partner callout */}
+          {/* Left - associate partner callout */}
           <div className="relative overflow-hidden rounded-2xl bg-navy p-10 text-white grain">
             {/* Gradient glow */}
             <div
@@ -55,7 +55,7 @@ export default function WhyJrp() {
 
               <p className="mt-6 text-base leading-relaxed text-white/75 max-w-sm">
                 JRP International is proudly backed by{' '}
-                <strong className="font-semibold text-white">Blue Spice Holidays</strong> — a seasoned travel associate
+                <strong className="font-semibold text-white">Blue Spice Holidays</strong> - a seasoned travel associate
                 whose team brings over 15 years of hands-on experience across luxury tourism, corporate travel, and
                 high-profile event logistics.
               </p>
@@ -74,7 +74,7 @@ export default function WhyJrp() {
             </div>
           </div>
 
-          {/* Right — pillars checklist */}
+          {/* Right - pillars checklist */}
           <div>
             <p className="eyebrow mb-4 text-royal">Why Choose JRP</p>
             <span className="block h-px w-10 bg-gradient-to-r from-navy to-gold mb-6" aria-hidden="true" />
