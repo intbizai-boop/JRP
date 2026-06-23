@@ -100,7 +100,7 @@ export default function VipServices() {
           }}
           aria-hidden="true"
         />
-        <div className="container-lux relative grid w-full items-center gap-12 lg:grid-cols-[0.70fr_1.30fr]">
+        <div className="container-lux relative grid w-full items-center gap-12 lg:grid-cols-[0.70fr_1.30fr] pt-6 md:pt-10">
           <div>
             <p className="eyebrow mb-4 text-gold">03 - VIP & Executive Services</p>
             <h2 className="max-w-md font-display text-4xl font-semibold tracking-tightest md:text-6xl md:leading-[1.05]">
