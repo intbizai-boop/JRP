@@ -29,7 +29,7 @@ const EVENT_ITEMS = [
   },
 ]
 
-export default function Events() {
+export default function Events({ onSelectEvent }) {
   return (
     <Section id="events" className="bg-tint">
       <SectionHeading
@@ -41,6 +41,17 @@ export default function Events() {
       <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {EVENT_ITEMS.map((item, i) => {
           const isFeatured = i === 0
+          const handleEnquire = (e) => {
+            e.preventDefault()
+            if (onSelectEvent) {
+              onSelectEvent(item.title)
+            }
+            const contactSection = document.getElementById('contact')
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' })
+            }
+          }
+
           return (
             <Item
               key={item.title}
@@ -75,6 +86,17 @@ export default function Events() {
                   {item.description}
                 </p>
                 
+                {/* Enquire Now CTA (always visible) */}
+                <button
+                  onClick={handleEnquire}
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-gold tracking-wide hover:text-white transition-colors duration-200"
+                >
+                  Enquire Now
+                  <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+
                 <span className="mt-4 block h-px w-10 bg-gold/70 transition-[width] duration-500 group-hover:w-20" aria-hidden="true" />
               </div>
             </Item>

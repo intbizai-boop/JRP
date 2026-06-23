@@ -35,13 +35,13 @@ export default function App() {
           <ScrollDivider />
           <Services onSelectService={(name) => setSelectedEnquiry({ type: 'Service', name })} />
           <ScrollDivider />
-          <Destinations />
+          <Destinations onSelectDestination={(name) => setSelectedEnquiry({ type: 'Destination', name })} />
           <ScrollDivider />
           <VipServices />
           <ScrollDivider />
           <TirupatiDarshan onSelectDestination={(name) => setSelectedEnquiry({ type: 'Destination', name })} />
           <ScrollDivider />
-          <Events />
+          <Events onSelectEvent={(name) => setSelectedEnquiry({ type: 'Event', name })} />
           <ScrollDivider />
           <WhyJrp />
           <ScrollDivider />
