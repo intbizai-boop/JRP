@@ -96,7 +96,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
                 <h4 className="mt-2 font-display text-2xl lg:text-xl font-semibold text-white tracking-tight">
                   Lord Tirupati Balaji
                 </h4>
-                <p className="mt-1 text-sm lg:text-xs text-white/70">Sacred Darshan of the Holy Deity</p>
+                <p className="mt-1 text-sm lg:text-xs text-white/70">VIP Darshan of the Holy Deity</p>
                 
                 {/* Enquire Now CTA (always visible) */}
                 <button

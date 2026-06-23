@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v1.1.6';
+const CACHE_VERSION = 'v1.1.7';
 const CACHE_NAME = `jrp-travels-${CACHE_VERSION}`;
 
 // Core assets to cache immediately on installation
