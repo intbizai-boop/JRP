@@ -1,25 +1,31 @@
 import { Section, SectionHeading, RevealGroup, Item } from '../components/Section'
+import ParallaxImage from '../components/ParallaxImage'
 
 const EVENT_ITEMS = [
   {
     title: 'Destination Weddings',
     description: 'Flawless celebrations in the world’s most beautiful venues, coordinated from guest arrivals to the final reception.',
+    image: '/images/destination-weddings.jpeg',
   },
   {
     title: 'Luxury Wedding Cars',
     description: 'Prestige vehicles (sedans, SUVs, and vintage classics) dressed for your big day and chauffeured to perfection.',
+    image: '/images/luxury -car.jpeg',
   },
   {
     title: 'Luxury Coach & Group Bus',
     description: 'Stylish, comfortable coach and bus transfers for large wedding parties, corporate groups, and delegations.',
+    image: '/images/luxury-coach.jpeg',
   },
   {
     title: 'Bouncer & Security Services',
     description: 'Professional security personnel for events, ensuring guest safety and smooth crowd management throughout.',
+    image: '/images/bouncer-security.png',
   },
   {
     title: 'Corporate Conferences',
     description: 'Professional event production, technical setup, and attendee logistics for high-impact brand statements.',
+    image: '/images/Conferences,meeting.training.jpeg',
   },
 ]
 
@@ -55,48 +61,56 @@ export default function Events() {
         lead="From destination weddings to executive conferences, we manage the logistics, hospitality, and transportation so every moment lands."
       />
 
-      <RevealGroup className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {EVENT_ITEMS.map((item, i) => {
           const isFeatured = i === 0
           return (
             <Item
               key={item.title}
-              className={`group flex min-w-0 flex-col justify-between rounded-2xl border border-hairline p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-gold/30 hover:shadow-float ${
-                isFeatured ? 'md:col-span-2 bg-navy text-white' : 'bg-white text-ink'
+              className={`group relative flex min-w-0 flex-col justify-end overflow-hidden rounded-2xl bg-navy p-8 text-white shadow-soft transition-[transform,box-shadow] duration-500 ease-lux hover:-translate-y-1 hover:shadow-float min-h-[320px] ${
+                isFeatured ? 'sm:col-span-2' : ''
               }`}
             >
-              <div>
-                <div className="flex items-center justify-between">
-                  <p className={`font-mono text-xs font-semibold ${isFeatured ? 'text-gold' : 'text-gold'}`}>
-                    {String(i + 1).padStart(2, '0')}
-                  </p>
-                  
-                  <div className={`flex h-10 w-10 items-center justify-center rounded-lg transition-colors duration-300 ${
-                    isFeatured ? 'bg-white/[0.08] text-gold' : 'bg-royal/[0.04] text-royal group-hover:bg-gold/[0.08] group-hover:text-gold'
-                  }`}>
-                    {ICONS[i] || ICONS[0]}
-                  </div>
-                </div>
-                
-                <h3 className={`font-display font-semibold tracking-tight ${
-                  isFeatured ? 'text-2xl md:text-3xl mt-6' : 'text-lg mt-5'
-                }`}>
-                  {item.title}
-                </h3>
-                
-                <p className={`mt-3 leading-relaxed ${
-                  isFeatured ? 'text-white/80 text-base max-w-xl' : 'text-body text-[13.5px]'
-                }`}>
-                  {item.description}
-                </p>
-              </div>
+              {/* Fallback sits below the image */}
+              <div className="img-fallback absolute inset-0" aria-hidden="true" />
 
-              <div className="mt-6 flex justify-end">
-                <span className={`inline-block transition-transform duration-300 group-hover:translate-x-1 ${
-                  isFeatured ? 'text-gold' : 'text-royal group-hover:text-gold'
-                }`} aria-hidden="true">
-                  →
-                </span>
+              {/* Parallax background image */}
+              <ParallaxImage src={item.image} alt={item.title} />
+
+              {/* Gradient overlay */}
+              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink/95 via-ink/35 to-transparent" aria-hidden="true" />
+
+              {/* Content on top */}
+              <div className="relative z-10 flex flex-col h-full justify-between">
+                <div>
+                  <div className="flex items-center justify-between">
+                    <p className="font-mono text-xs font-semibold text-gold">
+                      {String(i + 1).padStart(2, '0')}
+                    </p>
+                    
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/[0.08] text-gold border border-white/10">
+                      {ICONS[i] || ICONS[0]}
+                    </div>
+                  </div>
+                  
+                  <h3 className={`font-display font-semibold tracking-tight ${
+                    isFeatured ? 'text-2xl md:text-3xl mt-6' : 'text-xl mt-5'
+                  }`}>
+                    {item.title}
+                  </h3>
+                  
+                  <p className={`mt-3 leading-relaxed text-white/80 ${
+                    isFeatured ? 'text-base max-w-xl' : 'text-sm'
+                  }`}>
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="mt-6 flex justify-end">
+                  <span className="inline-block text-gold transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">
+                    →
+                  </span>
+                </div>
               </div>
             </Item>
           )
