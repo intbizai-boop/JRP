@@ -50,7 +50,7 @@ export default function Destinations() {
         <p className="eyebrow mb-5">International Experiences</p>
         <RevealGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {DESTINATIONS.international.map((d, i) => (
-            <DestinationCard key={d.name} {...d} span={i === 0} />
+            <DestinationCard key={d.name} {...d} span={i === 0 || d.name === 'Malaysia' || d.name === 'Sri Lanka'} />
           ))}
         </RevealGroup>
       </div>

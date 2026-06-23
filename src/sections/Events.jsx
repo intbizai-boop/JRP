@@ -52,7 +52,11 @@ export default function Events() {
               <div className="img-fallback absolute inset-0" aria-hidden="true" />
 
               {/* Parallax background image */}
-              <ParallaxImage src={item.image} alt={item.title} />
+              <ParallaxImage 
+                src={item.image} 
+                alt={item.title} 
+                className={item.image.includes('bouncer') ? 'object-top' : ''} 
+              />
 
               {/* Gradient overlay sits on top of image */}
               <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" aria-hidden="true" />
