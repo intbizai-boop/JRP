@@ -19,7 +19,7 @@ const PANELS = [
     title: 'Celebrity & High-Profile Travel',
     body: 'Confidential, end-to-end travel management for celebrities, dignitaries, and government delegations.',
     items: ['Celebrity Travel Management', 'Executive Protection', 'Political Delegation Logistics', 'VIP Temple Darshan'],
-    image: '/images/idol.jpeg',
+    image: '/images/celebrity-travel.png',
   },
 ]
 
