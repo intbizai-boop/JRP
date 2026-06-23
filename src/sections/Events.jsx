@@ -23,8 +23,8 @@ const EVENT_ITEMS = [
     image: '/images/bouncer-security.png',
   },
   {
-    title: 'Corporate Conferences',
-    description: 'Professional event production, technical setup, and attendee logistics for high-impact brand statements.',
+    title: 'Conferences, Meetings & Training',
+    description: 'Professional event production, technical setup, and end-to-end logistics for high-impact conferences, corporate meetings, and training seminars.',
     image: '/images/Conferences,meeting.training.jpeg',
   },
 ]
