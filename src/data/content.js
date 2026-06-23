@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Services', href: '#services' },
   { label: 'Destinations', href: '#destinations' },
+  { label: 'Tirupati VIP', href: '#tirupati' },
   { label: 'Events', href: '#events' },
   { label: 'Why JRP', href: '#why' },
   { label: 'Contact', href: '#contact' },

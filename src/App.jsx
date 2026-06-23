@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { MotionConfig } from 'framer-motion'
 import Header from './components/Header'
 import ScrollProgress from './components/ScrollProgress'
@@ -7,6 +8,7 @@ import Stats from './sections/Stats'
 import Services from './sections/Services'
 import Destinations from './sections/Destinations'
 import VipServices from './sections/VipServices'
+import TirupatiDarshan from './sections/TirupatiDarshan'
 import Events from './sections/Events'
 import WhyJrp from './sections/WhyJrp'
 import Contact from './sections/Contact'
@@ -14,6 +16,8 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
 export default function App() {
+  const [prefilledDestination, setPrefilledDestination] = useState('')
+
   return (
     <MotionConfig reducedMotion="user">
       <div className="min-h-screen bg-base text-ink">
@@ -35,11 +39,13 @@ export default function App() {
           <ScrollDivider />
           <VipServices />
           <ScrollDivider />
+          <TirupatiDarshan onSelectDestination={setPrefilledDestination} />
+          <ScrollDivider />
           <Events />
           <ScrollDivider />
           <WhyJrp />
           <ScrollDivider />
-          <Contact />
+          <Contact prefilledDestination={prefilledDestination} setPrefilledDestination={setPrefilledDestination} />
         </main>
         <Footer />
         

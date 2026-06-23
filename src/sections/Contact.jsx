@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../components/Button'
 
 const FACILITIES = ['3 Star', '4 Star', 'Luxury Resorts']
@@ -70,10 +70,19 @@ const initialForm = {
   specialRequests: '',
 }
 
-export default function Contact() {
+export default function Contact({ prefilledDestination, setPrefilledDestination }) {
   const [form, setForm] = useState(initialForm)
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [errorMsg, setErrorMsg] = useState('')
+
+  useEffect(() => {
+    if (prefilledDestination) {
+      setForm(prev => ({ ...prev, destination: prefilledDestination }))
+      if (setPrefilledDestination) {
+        setPrefilledDestination('')
+      }
+    }
+  }, [prefilledDestination, setPrefilledDestination])
 
   function handleChange(e) {
     const { name, value } = e.target
