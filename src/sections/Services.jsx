@@ -46,7 +46,7 @@ function ServiceTile({ service, index, onSelectService }) {
         {/* CTA Button */}
         <button
           onClick={handleEnquire}
-          className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-gold tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-white"
+          className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-gold tracking-wide hover:text-white transition-colors duration-200"
         >
           Enquire Now
           <svg className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
