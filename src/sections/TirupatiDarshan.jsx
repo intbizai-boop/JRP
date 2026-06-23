@@ -112,7 +112,7 @@ export default function TirupatiDarshan({ onSelectDestination }) {
             </div>
 
             {/* Overlapping floating card */}
-            <div className="absolute -bottom-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
+            <div className="absolute -top-6 -right-4 hidden sm:flex w-64 flex-col rounded-2xl border border-gold/20 bg-white p-4 shadow-float backdrop-blur-md transition-all duration-500 hover:border-gold/55 lg:-right-10">
               <div className="relative aspect-[3/2] w-full overflow-hidden rounded-xl bg-navy">
                 <img
                   src="/images/tirupati-gopurams.webp"
